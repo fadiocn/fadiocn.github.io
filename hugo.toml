@@ -4,7 +4,10 @@ title = '发声电台Fadio'
 theme = "PaperMod"
 
 enableGitInfo = true
-
+enableRobotsTXT = true
+canonifyURLs = true
+enableRSS = true
+defaultContentLanguage = "zh"
 
 # [author]
 #  name = "路发"
