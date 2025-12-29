@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://fadiocn.github.io/'
 languageCode = 'zh-CN'
 title = '发声电台Fadio'
 theme = "PaperMod"
@@ -24,10 +24,15 @@ enableGitInfo = true
     weight = 2
 
   [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 3
+
+  [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about/"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     identifier = "rss"
@@ -54,6 +59,7 @@ enableGitInfo = true
   # —— 文章增强 ——
   ShowReadingTime = true
   ShowWordCount = true
+  ShowPostMeta = true
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
