@@ -1,0 +1,84 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-CN'
+title = '发声电台Fadio'
+theme = "PaperMod"
+
+enableGitInfo = true
+
+
+# [author]
+#  name = "路发"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "rss"
+    name = "RSS"
+    url = "/index.xml"
+    weight = 99
+
+
+# PaperMod 核心参数
+[params]
+  logo = "/images/avatar.png"
+
+  mainSections = ["posts"]
+  
+  # —— 站点简介（SEO / RSS / 分享摘要）——
+  # description = "记录技术、商业与长期思考的个人博客"
+  # keywords = ["Hugo", "PaperMod", "博客", "写作"]
+  author = "路发"
+
+  # —— 主题外观 ——
+  defaultTheme = "auto"      # auto / light / dark
+  disableThemeToggle = false
+
+  # —— 文章增强 ——
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+  ShowToc = true
+  TocOpen = true  
+  
+  # —— 列表页信息 ——
+  ShowRssButtonInSectionTermList = true
+
+  # =================================================
+  # 社交账号（PaperMod 官方方式）
+  # =================================================
+  socialIcons = [
+    { name = "email", url = "mailto:ofa_@email.com" }
+#    { name = "rss", url = "index.xml" }
+    ]
+
+# { name = "github" ,     url = "https://github.com/fadiocn" },
+# { name = "linkedin" ,   url = "https://www.linkedin.com/in/yourname/" }
+# { name = "twitter" ,    url = "https://twitter.com/yourname" }
+
+# =====================================================
+# RSS 配置（Hugo 默认开启，这里是增强）
+# =====================================================
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
